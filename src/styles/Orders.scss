@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*   CONTENEDOR PRINCIPAL   */
+.my-order{
+    width: 300px;
+    padding-top: 80px;
+}
+
+/*       TITULO      */
+.my-order-title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}

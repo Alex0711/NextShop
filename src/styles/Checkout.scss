@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Layout{
+    display: flex;
+    justify-content: center;
+}
+.my-order{
+    width: 300px;
+    padding-top: 80px;
+}
+
+/*       TITULO      */
+.my-order-title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+
+/*   FECHA - ARTICULOS - TOTAL   */
+.my-order-content{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    padding: 8px 24px;
+    margin-bottom: 20px;
+}
+.my-order-content p:first-child{
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    font-size: var(--md);
+    font-weight: bold;
+}
+.check{
+    font-size: var(--md);
+    font-weight: bold;
+}
+.articles{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+}
