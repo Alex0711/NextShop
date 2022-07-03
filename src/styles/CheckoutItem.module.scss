@@ -1,26 +1,29 @@
 /*    PRODUCTOS    */
+@import "vars";
+
 .product{
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 0px 24px 0px;
-}
+} 
 .product div{
     display: flex;
     align-items: center;
 }
 .product-img{
-    width: 72px;
-    height: 72px;
+    width: 100px;
+    height: 100px;
     margin-right: 10px;
     object-fit: cover;
     border-radius: 20px;
 }
 .product-name{
-    font-size: var(--md);
-    color: var(--very-light-pink);
+    font-size: $--md;
+    color: $--very-light-pink;
 }
 .product-price{
-    font-size: var(--md);
+    font-size: $--md;
     font-weight: bold;
 }

@@ -1,15 +1,19 @@
 import React from 'react';
-import '../styles/CheckoutItem.scss'
+import Image from 'next/image';
+import styles from '@styles/CheckoutItem.module.scss'
 
-const CheckoutItem = () => {
+const CheckoutItem = ({ product }) => {
   return(
     <div>
-      <figure className="product">
+      <figure className= {styles.product}>
         <div>
-          <img src="./imgs/bike.jpeg" alt="bike" className="product-img" />
-          <p className="product-name">Bike</p>
+          <Image src={product.images[0]} alt={product.title}
+          width={50}
+          height={50}
+          />
+          <p className={styles['product-name']}> {product.title} </p>
         </div>
-        <p className="product-price">$120</p>
+        <p className={styles['product-price']}>$ {product.price} </p>
       </figure>
     </div>
   )
