@@ -6,12 +6,8 @@ import Styles from '@styles/ProductItem.module.scss';
 
 const ProductItem = ({ product }) => {
 	const { addToCart } = useContext(AppContext);
-
-	const handleClick = item => {
-		addToCart(item);
-	}
 	
-	console.log({'hola':'mundo'})
+	console.log({'hola':'mundo'});
   
 	return (
 		<div className={Styles.ProductItem}>
@@ -27,12 +23,12 @@ const ProductItem = ({ product }) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<figure onClick={() => handleClick(product)} >
+				<figure onClick={() => addToCart(product)} >
 					<Image src={addToCartImage} alt="AddToCart" />
 				</figure>
 			</div>
 		</div>
 	);
-}
+};
 
 export default ProductItem;

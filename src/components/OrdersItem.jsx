@@ -9,7 +9,7 @@ const ProductItem = ({ product }) => {
 
 	const handleClick = item => {
 		removeFromCart(item);
-	}
+	};
   
 	return (
 		<div className={styles.OrdersItem}>
@@ -28,6 +28,6 @@ const ProductItem = ({ product }) => {
 			</div>
 		</div>
 	);
-}
+};
 
 export default ProductItem;

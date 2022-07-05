@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '@styles/CheckoutItem.module.scss'
+import styles from '@styles/CheckoutItem.module.scss';
 
 const CheckoutItem = ({ product }) => {
   return(
@@ -16,7 +16,7 @@ const CheckoutItem = ({ product }) => {
         <p className={styles['product-price']}>$ {product.price} </p>
       </figure>
     </div>
-  )
-}
+  );
+};
 
 export default CheckoutItem;
